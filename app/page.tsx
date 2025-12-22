@@ -59,7 +59,7 @@ export default function LandingPage() {
       {/* --- Modern Nav --- */}
       <nav className="flex justify-between items-center px-8 py-6 sticky top-0 bg-white/80 backdrop-blur-md z-[90]">
         <div className="text-xl font-serif tracking-[0.2em] uppercase font-semibold">
-          Artistry <span className="text-stone-400 font-light">by</span> Isha
+          Makeup <span className="text-stone-400 font-light">by</span> Isha
         </div>
         <div className="hidden md:flex gap-10 text-[11px] uppercase tracking-widest font-medium">
           <a href="#services" className="hover:text-amber-700 transition">
@@ -107,7 +107,7 @@ export default function LandingPage() {
           {/* Main Hero Image */}
           <div className="relative aspect-[4/5] bg-stone-200 rounded-[40px] overflow-hidden shadow-2xl">
             <img
-              src={"https://ik.imagekit.io/apylsa7sp/bridal-main.jpg"}
+              src={"https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-22%20at%203.42.06%E2%80%AFPM.png"}
               // src={IMAGE_GALLERY[0].src}
               alt="Bridal Makeup"
               className="object-cover w-full h-full"
@@ -137,7 +137,7 @@ export default function LandingPage() {
           {/* Large Item */}
           <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl">
             <img
-              src={"https://ik.imagekit.io/apylsa7sp/cocktail.jpg"}
+              src={"https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-22%20at%203.36.36%E2%80%AFPM.png"}
               className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -147,14 +147,26 @@ export default function LandingPage() {
             </div>
           </div>
           {/* Medium Items */}
-          <div className="col-span-2 relative group overflow-hidden rounded-3xl">
+          {/* <div className="col-span-2 relative group overflow-hidden rounded-3xl">
             <img
               src={"https://ik.imagekit.io/apylsa7sp/hair-styles.jpg"}
               className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition" />
-          </div>
+          </div> */}
           {/* Small Items */}
+          <div className="relative group overflow-hidden rounded-3xl">
+            <img
+              src={"https://ik.imagekit.io/apylsa7sp/bridal-main.jpg"}
+              className="w-full h-full object-cover transition"
+            />
+          </div>
+          <div className="relative group overflow-hidden rounded-3xl">
+            <img
+              src={"https://ik.imagekit.io/apylsa7sp/cocktail.jpg"}
+              className="w-full h-full object-cover transition"
+            />
+          </div>
           <div className="relative group overflow-hidden rounded-3xl">
             <img
               src={"https://ik.imagekit.io/apylsa7sp/mehendi.jpg"}
@@ -257,7 +269,7 @@ export default function LandingPage() {
               Connect
             </h6>
             <div className="flex items-center gap-2 mb-2">
-              <MapPin size={16} /> South Extension, New Delhi
+              <MapPin size={16} /> South Delhi, New Delhi
             </div>
             <a
               className="flex items-center gap-2 mb-2"
@@ -275,7 +287,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-100 text-[10px] uppercase tracking-widest text-stone-400">
-          © 2024 All Rights Reserved. Created for Artistry by Isha Gupta.
+          © 2025 All Rights Reserved. Created for Artistry by Isha Gupta.
         </div>
       </footer>
     </div>

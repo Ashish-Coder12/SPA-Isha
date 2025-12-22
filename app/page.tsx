@@ -275,7 +275,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-100 text-[10px] uppercase tracking-widest text-stone-400">
-          © 2024 All Rights Reserved. Created for Artistry by [Isha Gupta].
+          © 2024 All Rights Reserved. Created for Artistry by Isha Gupta.
         </div>
       </footer>
     </div>

@@ -172,30 +172,37 @@ export default function LandingPage() {
           <p className="text-stone-400 uppercase text-[10px] tracking-[0.4em] font-bold">All-Inclusive Makeup Services</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {[
-            { name: "Party Makeup", price: "4,500", desc: "Sleek & Stunning Glam" },
-            { name: "Haldi / Mehendi", price: "5,999", desc: "Radiant, Long-lasting Freshness" },
-            { name: "Engagement / Reception", price: "9,999", desc: "Ultra HD Luxury Finish" }
-          ].map((pkg) => (
-            <div key={pkg.name} className="bg-white p-8 rounded-[32px] border border-stone-200 hover:shadow-2xl hover:border-amber-100 transition-all group relative overflow-hidden">
-              <h4 className="text-xl font-serif mb-1 group-hover:text-amber-900">{pkg.name}</h4>
-              <p className="text-stone-400 text-[10px] mb-6 uppercase tracking-widest font-bold">{pkg.desc}</p>
-              <div className="text-4xl font-light mb-8 text-stone-800 tracking-tighter">₹{pkg.price}</div>
-              <ul className="space-y-3 mb-10 border-t border-stone-50 pt-6">
-                {['HD Makeup', 'Desired Hairstyles', 'Lenses & Premium Lashes', 'Outfit Draping', 'Jewellery Assistance'].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-stone-600">
-                    <CheckCircle2 size={14} className="text-stone-300 group-hover:text-amber-600" /> {item}
-                  </li>
-                ))}
-              </ul>
-              <a href={`https://wa.me/918076791133?text=Hi%20Isha,%20I%20want%20to%20book%20the%20${pkg.name}%20package.`} 
-                 className="block text-center py-3 rounded-full bg-stone-900 text-white font-medium hover:bg-stone-700 transition shadow-md">
-                Reserve Your Date
-              </a>
-            </div>
-          ))}
+       {/* --- Pricing: Makeup Packages --- */}
+<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+  {[
+    { name: "Party Makeup", price: "4,500", desc: "Sleek & Stunning Glam" },
+    { name: "Haldi / Mehendi", price: "5,999", desc: "Radiant, Long-lasting Freshness" },
+    { name: "Engagement / Reception", price: "9,999", desc: "Ultra HD Luxury Finish" },
+    { name: "Bridal Makeup", price: "14,999", desc: "The Signature Royal Glow", featured: true }
+  ].map((pkg) => (
+    <div key={pkg.name} className={`bg-white p-8 rounded-[32px] border ${pkg.featured ? 'border-amber-400 shadow-xl scale-105' : 'border-stone-200'} hover:shadow-2xl hover:border-amber-200 transition-all group relative overflow-hidden`}>
+      {pkg.featured && (
+        <div className="absolute top-0 right-0 bg-amber-400 text-white text-[9px] font-bold px-4 py-1 rounded-bl-xl uppercase tracking-widest">
+          Most Booked
         </div>
+      )}
+      <h4 className="text-xl font-serif mb-1 group-hover:text-amber-900">{pkg.name}</h4>
+      <p className="text-stone-400 text-[10px] mb-6 uppercase tracking-widest font-bold">{pkg.desc}</p>
+      <div className="text-4xl font-light mb-8 text-stone-800 tracking-tighter">₹{pkg.price}</div>
+      <ul className="space-y-3 mb-10 border-t border-stone-50 pt-6">
+        {['HD Makeup', 'Desired Hairstyles', 'Lenses & Premium Lashes', 'Outfit Draping', 'Jewellery Assistance'].map((item) => (
+          <li key={item} className="flex items-center gap-2 text-sm text-stone-600">
+            <CheckCircle2 size={14} className="text-stone-300 group-hover:text-amber-600" /> {item}
+          </li>
+        ))}
+      </ul>
+      <a href={`https://wa.me/918076791133?text=Hi%20Isha,%20I%20want%20to%20book%20the%20${pkg.name}%20package.`} 
+         className={`block text-center py-3 rounded-full font-medium transition shadow-md ${pkg.featured ? 'bg-amber-600 text-white hover:bg-amber-700' : 'bg-stone-900 text-white hover:bg-stone-700'}`}>
+        Reserve Your Date
+      </a>
+    </div>
+  ))}
+</div>
 
         {/* --- Hairstyling Only --- */}
         <div className="bg-stone-900 text-white p-10 md:p-16 rounded-[40px] overflow-hidden relative shadow-2xl">

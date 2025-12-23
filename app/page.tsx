@@ -13,9 +13,8 @@ import {
   Heart,
   Brush
 } from "lucide-react";
-import Image from "next/image";
 
-// --- CONFIGURATION: Update your image paths here ---
+// --- CONFIGURATION ---
 const IMAGE_GALLERY = [
   { id: 1, src: "https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-22%20at%203.36.36%E2%80%AFPM.png", title: "Luxury Bridal HD", category: "Bridal" },
   { id: 2, src: "https://ik.imagekit.io/apylsa7sp/bridal-main.jpg", title: "Evening Glam", category: "Non-Bridal" },
@@ -77,7 +76,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="relative aspect-[4/5] bg-stone-200 rounded-[40px] overflow-hidden shadow-2xl">
-            <Image
+            <img
               src="https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-22%20at%203.42.06%E2%80%AFPM.png"
               alt="Bridal Makeup by Isha"
               className="object-cover w-full h-full"
@@ -86,7 +85,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* --- NEW SECTION: Philosophy & Detail --- */}
+      {/* --- Philosophy Section (FIXED QUOTES HERE) --- */}
       <section id="about-work" className="py-24 bg-white px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-16 border-b border-stone-100 pb-20">
@@ -96,7 +95,7 @@ export default function LandingPage() {
             </div>
             <div className="md:col-span-2 space-y-6">
               <p className="text-xl text-stone-600 leading-relaxed font-light">
-                At <span className="font-semibold text-stone-900">Makeup by Isha</span>, we believe that makeup isn't a mask, but a celebration of who you are. Whether it's the most important day of your life or a gala night with friends, our goal is to provide a <span className="italic underline underline-offset-4 decoration-stone-200">weightless, HD finish</span> that looks just as stunning in person as it does on camera.
+                At <span className="font-semibold text-stone-900">Makeup by Isha</span>, we believe that makeup isn&apos;t a mask, but a celebration of who you are. Whether it&apos;s the most important day of your life or a gala night with friends, our goal is to provide a <span className="italic underline underline-offset-4 decoration-stone-200">weightless, HD finish</span> that looks just as stunning in person as it does on camera.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                 <div className="space-y-3">
@@ -106,8 +105,8 @@ export default function LandingPage() {
                 </div>
                 <div className="space-y-3">
                   <div className="w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center"><Camera size={20} className="text-stone-600"/></div>
-                  <h4 className="font-bold text-sm uppercase tracking-widest">Editorial & Party</h4>
-                  <p className="text-sm text-stone-500 leading-relaxed text-balance">From Hollywood waves to bold cocktail eyes, we tailor every look to your outfit's aesthetic and the event's vibe.</p>
+                  <h4 className="font-bold text-sm uppercase tracking-widest">Editorial &amp; Party</h4>
+                  <p className="text-sm text-stone-500 leading-relaxed text-balance">From Hollywood waves to bold cocktail eyes, we tailor every look to your outfit&apos;s aesthetic and the event&apos;s vibe.</p>
                 </div>
               </div>
             </div>
@@ -128,7 +127,7 @@ export default function LandingPage() {
           <div className="flex items-start gap-4 p-6 border-y md:border-y-0 md:border-x border-stone-200 hover:bg-white transition-colors rounded-3xl group">
             <Sparkles className="text-stone-300 group-hover:text-amber-700 transition-colors shrink-0" size={32} />
             <div>
-              <h5 className="font-semibold uppercase text-[10px] tracking-widest mb-2">Cleanliness & Hygiene</h5>
+              <h5 className="font-semibold uppercase text-[10px] tracking-widest mb-2">Cleanliness &amp; Hygiene</h5>
               <p className="text-[13px] text-stone-500">Strict sanitation protocols for all tools and products for every appointment.</p>
             </div>
           </div>
@@ -136,18 +135,18 @@ export default function LandingPage() {
             <MapPin className="text-stone-300 group-hover:text-amber-700 transition-colors shrink-0" size={32} />
             <div>
               <h5 className="font-semibold uppercase text-[10px] tracking-widest mb-2">Travel Services</h5>
-              <p className="text-[13px] text-stone-500">Based in South Delhi. Doorstep services available across Delhi NCR & destination weddings.</p>
+              <p className="text-[13px] text-stone-500">Based in South Delhi. Doorstep services available across Delhi NCR &amp; destination weddings.</p>
             </div>
           </div>
         </div>
       </section>
 
-       {/* --- Portfolio Section --- */}
+       {/* --- Portfolio --- */}
       <section id="work" className="py-24 px-6 max-w-7xl mx-auto border-t border-stone-100">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
-            <h2 className="text-4xl font-serif italic text-stone-800 tracking-tight text-center md:text-left">The Portfolio</h2>
-            <p className="text-stone-400 mt-2 tracking-widest text-[10px] uppercase font-bold text-center md:text-left">Selected works & Transformations</p>
+            <h2 className="text-4xl font-serif italic text-stone-800 tracking-tight">The Portfolio</h2>
+            <p className="text-stone-400 mt-2 tracking-widest text-[10px] uppercase font-bold">Selected works &amp; Transformations</p>
           </div>
           <a href="https://www.instagram.com/ig.gleam" className="flex items-center gap-2 text-sm font-medium border-b border-stone-300 pb-1 hover:text-amber-700 hover:border-amber-700 transition">
             See more on Instagram <Instagram size={16} />
@@ -156,24 +155,17 @@ export default function LandingPage() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[250px] md:auto-rows-[300px]">
           <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl bg-stone-200">
-            <Image src={IMAGE_GALLERY[0].src} className="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Work"/>
+            <img src={IMAGE_GALLERY[0].src} className="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Work"/>
           </div>
-          <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <Image src={IMAGE_GALLERY[1].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
-          </div>
-          <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <Image src={IMAGE_GALLERY[2].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
-          </div>
-          <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <Image src={IMAGE_GALLERY[3].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
-          </div>
-          <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <Image src={IMAGE_GALLERY[4].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
-          </div>
+          {IMAGE_GALLERY.slice(1).map((img) => (
+            <div key={img.id} className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
+              <img src={img.src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* --- Pricing: Makeup Packages --- */}
+      {/* --- Rate Card --- */}
       <section id="pricing" className="py-24 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-serif mb-4 italic text-stone-800">Rate Card</h2>
@@ -205,11 +197,8 @@ export default function LandingPage() {
           ))}
         </div>
 
-        {/* --- Pricing: Hairstyling Only --- */}
+        {/* --- Hairstyling Only --- */}
         <div className="bg-stone-900 text-white p-10 md:p-16 rounded-[40px] overflow-hidden relative shadow-2xl">
-          <div className="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
-            <Brush size={200} />
-          </div>
           <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-serif mb-4 flex items-center gap-3 italic">Hairstyling Only <Heart size={24} className="text-amber-600 fill-amber-600"/></h3>
@@ -232,7 +221,7 @@ export default function LandingPage() {
               <h5 className="flex items-center gap-2 font-bold text-xs uppercase tracking-widest mb-6 text-amber-500"> <Info size={16}/> Essential Booking Policy</h5>
               <ul className="space-y-4 text-xs text-stone-400 leading-relaxed">
                 <li className="flex gap-2"><span>•</span> <span>Prices include services within <span className="text-white font-bold tracking-widest underline decoration-amber-600">DELHI NCR</span> only.</span></li>
-                <li className="flex gap-2"><span>•</span> <span>Travel & conveyance charges are added separately for locations outside the NCR region.</span></li>
+                <li className="flex gap-2"><span>•</span> <span>Travel &amp; conveyance charges are added separately for locations outside the NCR region.</span></li>
                 <li className="flex gap-2"><span>•</span> <span><strong>Bridal Services:</strong> We highly encourage and are open for pre-wedding trials.</span></li>
                 <li className="flex gap-2"><span>•</span> <span>Hygiene is our top priority. All tools are sanitized before every appointment.</span></li>
               </ul>
@@ -255,7 +244,7 @@ export default function LandingPage() {
           <div>
             <h6 className="text-[10px] uppercase tracking-widest font-bold mb-6 text-stone-500">Contact Details</h6>
             <div className="flex items-center gap-2 mb-3"><MapPin size={16} className="text-stone-400"/> South Delhi, New Delhi</div>
-            <a href="https://www.instagram.com/ig.gleam/" target="_blank" className="flex items-center gap-2 hover:text-amber-700 transition">
+            <a href="https://www.instagram.com/ig.gleam/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-amber-700 transition">
               <Instagram size={16} className="text-stone-400"/> @ig.gleam
             </a>
           </div>
@@ -267,7 +256,6 @@ export default function LandingPage() {
         </div>
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-100 text-[10px] uppercase tracking-widest text-stone-400 flex justify-between">
           <span>© 2025 Isha Gupta. All Rights Reserved.</span>
-          <span className="hidden md:inline italic">Designed for Artistry</span>
         </div>
       </footer>
     </div>

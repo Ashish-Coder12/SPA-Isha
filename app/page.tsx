@@ -13,6 +13,7 @@ import {
   Heart,
   Brush
 } from "lucide-react";
+import Image from "next/image";
 
 // --- CONFIGURATION: Update your image paths here ---
 const IMAGE_GALLERY = [
@@ -76,7 +77,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="relative aspect-[4/5] bg-stone-200 rounded-[40px] overflow-hidden shadow-2xl">
-            <img
+            <Image
               src="https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-22%20at%203.42.06%E2%80%AFPM.png"
               alt="Bridal Makeup by Isha"
               className="object-cover w-full h-full"
@@ -155,19 +156,19 @@ export default function LandingPage() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[250px] md:auto-rows-[300px]">
           <div className="col-span-2 row-span-2 relative group overflow-hidden rounded-3xl bg-stone-200">
-            <img src={IMAGE_GALLERY[0].src} className="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Work"/>
+            <Image src={IMAGE_GALLERY[0].src} className="w-full h-full object-cover transition duration-700 group-hover:scale-110" alt="Work"/>
           </div>
           <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <img src={IMAGE_GALLERY[1].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
+            <Image src={IMAGE_GALLERY[1].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
           </div>
           <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <img src={IMAGE_GALLERY[2].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
+            <Image src={IMAGE_GALLERY[2].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
           </div>
           <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <img src={IMAGE_GALLERY[3].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
+            <Image src={IMAGE_GALLERY[3].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
           </div>
           <div className="relative group overflow-hidden rounded-3xl bg-stone-200 shadow-md">
-            <img src={IMAGE_GALLERY[4].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
+            <Image src={IMAGE_GALLERY[4].src} className="w-full h-full object-cover transition group-hover:scale-105" alt="Work"/>
           </div>
         </div>
       </section>

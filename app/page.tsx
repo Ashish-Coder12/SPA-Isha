@@ -21,6 +21,10 @@ const IMAGE_GALLERY = [
   { id: 3, src: "https://ik.imagekit.io/apylsa7sp/cocktail.jpg", title: "Hollywood Waves", category: "Styling" },
   { id: 4, src: "https://ik.imagekit.io/apylsa7sp/mehendi.jpg", title: "Reception Look", category: "Bridal" },
   { id: 5, src: "https://ik.imagekit.io/apylsa7sp/reception.jpg", title: "Mehendi Fresh", category: "Non-Bridal" },
+  { id: 5, src: "https://ik.imagekit.io/apylsa7sp/IMG-20251223-WA0019.jpg", title: "Mehendi Fresh", category: "Non-Bridal" },
+  { id: 5, src: "https://ik.imagekit.io/apylsa7sp/IMG-20251223-WA0018.jpg", title: "Mehendi Fresh", category: "Non-Bridal" },
+  { id: 5, src: "https://ik.imagekit.io/apylsa7sp/IMG-20251223-WA0017.jpg", title: "Mehendi Fresh", category: "Non-Bridal" },
+  { id: 5, src: "https://ik.imagekit.io/apylsa7sp/Screenshot%202025-12-24%20at%2010.54.53%E2%80%AFAM.png", title: "Mehendi Fresh", category: "Non-Bridal" },
 ];
 
 export default function LandingPage() {
